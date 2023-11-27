@@ -7,7 +7,6 @@
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
 }
 
 video,
@@ -15,27 +14,65 @@ iframe {
   width: 100%;
   height: auto;
   aspect-ratio: 16/9;
-  border: 10px solid rgb(0, 0, 0);
   border-radius: 5px;
 }
 
-/*********************************reset**********************************/
+/*********************************main**********************************/
 
 body {
+  position: relative;
 }
 
 main {
   max-width: 1300px;
   margin: 0 auto;
+}
+
+header {
+  background-color: #6a8d73;
   padding: 5% 0;
 }
 
+footer {
+  background-color: #6a8d73;
+  padding: 5% 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*********************************tekst**********************************/
+h2,
+h3 {
+  color: #0c1d10;
+  padding: 10px 0;
+  font-family: "Hind Madurai", sans-serif;
+}
+
+h1 {
+  color: #0c1d10;
+  padding: 10px;
+  font-size: 100px;
+  font-family: "Squada One", sans-serif;
+  text-align: center;
+}
+
+p {
+  color: #0c1d10;
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 0 8%;
+}
+
+/*********************************containere**********************************/
+
 .gallery {
+  background-color: #6a8d73;
+  border: 20px solid #6a8d73;
+  border-radius: 5px;
+  gap: 10px;
+
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: center;
 }
 
 .col {
@@ -43,5 +80,24 @@ main {
 }
 
 .video_container {
-  padding: 5% 0;
+  padding: 2% 0;
+}
+
+@media screen and (max-width: 992px) {
+  h2,
+  h3 {
+    padding-left: 10px;
+  }
+
+  h1 {
+    color: #0c1d10;
+    font-size: 30px;
+    font-family: "Squada One", sans-serif;
+  }
+
+  p {
+    color: #0c1d10;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
 }
