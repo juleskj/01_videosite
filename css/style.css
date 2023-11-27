@@ -29,8 +29,9 @@ main {
 }
 
 header {
-  background-color: #6a8d73;
-  padding: 5% 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 footer {
@@ -38,6 +39,38 @@ footer {
   padding: 5% 0;
   text-align: center;
   margin-top: 20px;
+}
+
+nav {
+  background-color: #4b6952;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+li {
+  padding: 10px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 10px;
+
+  border-radius: 5px;
+  color: #0c1d10;
+
+  font-family: "Hind Madurai", sans-serif;
+}
+
+li :hover {
+  color: #ffffff;
+  background-color: #989898;
 }
 
 /*********************************tekst**********************************/
@@ -64,6 +97,11 @@ p {
 }
 
 /*********************************containere**********************************/
+
+#forside_billede {
+  background-color: #6a8d73;
+  padding: 5% 0;
+}
 
 .gallery {
   background-color: #6a8d73;
