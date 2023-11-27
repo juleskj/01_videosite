@@ -1,0 +1,47 @@
+/*********************************reset**********************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+video,
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border: 10px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+/*********************************reset**********************************/
+
+body {
+}
+
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.col {
+  flex: 1 0 300px;
+}
+
+.video_container {
+  padding: 5% 0;
+}
